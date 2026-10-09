@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- User message bubble — RIGHT aligned, blue background -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:padding="4dp"
+    android:paddingStart="40dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <!-- Message bubble -->
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_chat_user"
+            android:textColor="@color/chat_user_text"
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:maxWidth="280dp"
+            android:lineSpacingExtra="2dp" />
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_hint"
+            android:textSize="10sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

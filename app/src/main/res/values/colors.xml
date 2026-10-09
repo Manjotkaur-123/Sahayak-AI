@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#1976D2</color>
+    <color name="accent">#00ACC1</color>
+    <color name="accent_light">#E0F7FA</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F5F7FA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#546E7A</color>
+    <color name="text_hint">#90A4AE</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Status Colors -->
+    <color name="status_eligible">#2E7D32</color>
+    <color name="status_eligible_bg">#E8F5E9</color>
+    <color name="status_possibly">#F57F17</color>
+    <color name="status_possibly_bg">#FFF8E1</color>
+    <color name="status_verify">#E65100</color>
+    <color name="status_verify_bg">#FBE9E7</color>
+    <color name="status_not_eligible">#C62828</color>
+    <color name="status_not_eligible_bg">#FFEBEE</color>
+
+    <!-- Chat Colors -->
+    <color name="chat_user_bubble">#1565C0</color>
+    <color name="chat_ai_bubble">#F0F4F8</color>
+    <color name="chat_user_text">#FFFFFF</color>
+    <color name="chat_ai_text">#1A1A2E</color>
+
+    <!-- Category Tag Colors -->
+    <color name="tag_education">#7B1FA2</color>
+    <color name="tag_education_bg">#F3E5F5</color>
+    <color name="tag_women">#C2185B</color>
+    <color name="tag_women_bg">#FCE4EC</color>
+    <color name="tag_employment">#00695C</color>
+    <color name="tag_employment_bg">#E0F2F1</color>
+    <color name="tag_health">#D32F2F</color>
+    <color name="tag_health_bg">#FFEBEE</color>
+    <color name="tag_housing">#1565C0</color>
+    <color name="tag_housing_bg">#E3F2FD</color>
+    <color name="tag_agriculture">#558B2F</color>
+    <color name="tag_agriculture_bg">#F1F8E9</color>
+
+    <!-- Misc -->
+    <color name="divider">#E0E0E0</color>
+    <color name="ripple">#1A1565C0</color>
+    <color name="notification_badge">#F44336</color>
+    <color name="shimmer_base">#E0E0E0</color>
+    <color name="shimmer_highlight">#F5F5F5</color>
+    <color name="splash_background">#1565C0</color>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Home screen content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header / Greeting Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header_gradient"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:paddingBottom="28dp">
+
+                <!-- Top row: greeting + notification bell -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SAHAYAK AI"
+                            android:textColor="#B3FFFFFF"
+                            android:textSize="12sp"
+                            android:letterSpacing="0.15" />
+
+                        <TextView
+                            android:id="@+id/tv_greeting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello! 👋"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Notification bell icon -->
+                    <ImageView
+                        android:id="@+id/iv_notifications"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/ic_notification_bell"
+                        android:background="@drawable/bg_header_icon_btn"
+                        app:tint="#FFFFFF"
+                        android:padding="9dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="Notifications" />
+                </LinearLayout>
+
+                <!-- Ask Sahayak Input (decorative, taps to open Chat) -->
+                <LinearLayout
+                    android:id="@+id/ll_ask_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@color/card_background"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:paddingStart="16dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <!-- We make this a click-to-chat button -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="💬 Ask about government schemes…"
+                        android:textColor="@color/text_hint"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Quick Suggestions Chips -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Questions"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="8dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_scholarships"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎓 Scholarships"
+                        app:chipBackgroundColor="@color/accent_light"
+                        app:chipStrokeColor="@color/accent"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/primary" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_women"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👩 Women Schemes"
+                        app:chipBackgroundColor="@color/accent_light"
+                        app:chipStrokeColor="@color/accent"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/primary" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_students"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📚 For Students"
+                        app:chipBackgroundColor="@color/accent_light"
+                        app:chipStrokeColor="@color/accent"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/primary" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_employment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💼 Employment"
+                        app:chipBackgroundColor="@color/accent_light"
+                        app:chipStrokeColor="@color/accent"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/primary" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_my_schemes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✨ My Schemes"
+                        app:chipBackgroundColor="@color/primary"
+                        android:textColor="#FFFFFF" />
+
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+
+            <!-- Recommended Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🌟 Recommended For You"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Demo data notice -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚠️ DEMO DATA — For academic demonstration only"
+                android:textColor="@color/status_verify"
+                android:textSize="11sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp" />
+
+            <!-- Scheme RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_recommended"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- Empty state -->
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No schemes found matching your current profile.\nExplore schemes or update your profile details."
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="32dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color" />
+
+</LinearLayout>

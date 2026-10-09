@@ -1,0 +1,174 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <!-- Background: Deep Royal Navy Blue Squircle -->
+    <path
+        android:pathData="M26,4 L102,4 C114,4 124,14 124,26 L124,102 C124,114 114,124 102,124 L26,124 C14,124 4,114 4,102 L4,26 C4,14 14,4 26,4 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="12"
+                android:startY="8"
+                android:endX="116"
+                android:endY="120"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF0D3B82" />
+                <item android:offset="0.5" android:color="#FF0A2758" />
+                <item android:offset="1.0" android:color="#FF061A3C" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- SAFFRON / ORANGE WINGS (Left Side) -->
+    <!-- Top left wing feather -->
+    <path
+        android:pathData="M38,32 C30,36 24,46 26,56 C28,52 34,44 42,42 Z"
+        android:fillColor="#FFA726" />
+    <!-- Middle left wing feather -->
+    <path
+        android:pathData="M34,45 C25,51 22,62 26,71 C27,66 32,58 40,55 Z"
+        android:fillColor="#FF9800" />
+    <!-- Lower left wing feather -->
+    <path
+        android:pathData="M32,60 C25,66 26,76 34,82 C32,77 34,70 42,66 Z"
+        android:fillColor="#FB8C00" />
+
+    <!-- SAFFRON / ORANGE WINGS (Right Side) -->
+    <!-- Top right wing feather -->
+    <path
+        android:pathData="M90,32 C98,36 104,46 102,56 C100,52 94,44 86,42 Z"
+        android:fillColor="#FFA726" />
+    <!-- Middle right wing feather -->
+    <path
+        android:pathData="M94,45 C103,51 106,62 102,71 C101,66 96,58 88,55 Z"
+        android:fillColor="#FF9800" />
+    <!-- Lower right wing feather -->
+    <path
+        android:pathData="M96,60 C103,66 102,76 94,82 C96,77 94,70 86,66 Z"
+        android:fillColor="#FB8C00" />
+
+    <!-- SUPPORTIVE HELPING HAND (Cradling from bottom) -->
+    <!-- White Palm Foundation -->
+    <path
+        android:pathData="M30,73 C35,85 48,93 64,93 C80,93 92,86 98,76 C94,83 82,90 66,90 C50,90 38,82 34,73 Z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M34,72 C40,82 52,87 66,87 C76,87 86,83 94,75 C90,80 80,85 66,85 C52,85 42,80 37,73 Z"
+        android:fillColor="#E2E8F0" />
+    <!-- Green Accent Tip on Hand -->
+    <path
+        android:pathData="M84,81 C88,78 94,74 98,69 C96,74 92,79 88,82 Z"
+        android:fillColor="#00BFA5" />
+
+    <!-- SHIELD CREST (White Outer Border) -->
+    <path
+        android:pathData="M64,13 L40,21 C38,33 36,54 44,70 C52,82 64,88 64,88 C64,88 76,82 84,70 C92,54 90,33 88,21 Z"
+        android:strokeWidth="3.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:fillColor="#00897B" />
+
+    <!-- AI CIRCUIT NODES (Inside Lower Shield) -->
+    <!-- Center vertical line & node -->
+    <path
+        android:pathData="M64,66 L64,56"
+        android:strokeWidth="2.2"
+        android:strokeColor="#80DEEA"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M64,54 m-2.2,0 a2.2,2.2 0 1,0 4.4,0 a2.2,2.2 0 1,0 -4.4,0"
+        android:fillColor="#80DEEA" />
+
+    <!-- Left branching circuit line & node -->
+    <path
+        android:pathData="M60,67 L54,67 L50,60"
+        android:strokeWidth="2.2"
+        android:strokeColor="#80DEEA"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M49,58 m-2.2,0 a2.2,2.2 0 1,0 4.4,0 a2.2,2.2 0 1,0 -4.4,0"
+        android:fillColor="#80DEEA" />
+
+    <!-- Right branching circuit line & node -->
+    <path
+        android:pathData="M68,67 L74,67 L78,60"
+        android:strokeWidth="2.2"
+        android:strokeColor="#80DEEA"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M79,58 m-2.2,0 a2.2,2.2 0 1,0 4.4,0 a2.2,2.2 0 1,0 -4.4,0"
+        android:fillColor="#80DEEA" />
+
+    <!-- SMILING AI BOT HEAD (Inside Upper Shield) -->
+    <!-- Bot Antenna Stem & Cap -->
+    <path
+        android:pathData="M64,24 L64,28"
+        android:strokeWidth="2.8"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M64,22 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Bot Head Capsule Frame (White Solid) -->
+    <path
+        android:pathData="M53,29 L75,29 C81.5,29 86,34 86,41 C86,48 81.5,53 75,53 L53,53 C46.5,53 42,48 42,41 C42,34 46.5,29 53,29 Z"
+        android:strokeWidth="3.2"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00897B" />
+
+    <!-- Bot Left Ear Cap -->
+    <path
+        android:pathData="M42,38 C39,38 37,40 37,43 C37,46 39,48 42,48 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Bot Right Ear Cap -->
+    <path
+        android:pathData="M86,38 C89,38 91,40 91,43 C91,46 89,48 86,48 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Happy Closed Smiling Eyes (^ ^) -->
+    <!-- Left Eye Arc -->
+    <path
+        android:pathData="M49,43 C51,38 56,38 58,43"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <!-- Right Eye Arc -->
+    <path
+        android:pathData="M70,43 C72,38 77,38 79,43"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- BOTTOM ASHOKA CHAKRA EMBLEM -->
+    <path
+        android:pathData="M64,116 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:strokeWidth="1.2"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M64,113 L64,119 M61,116 L67,116 M62,114 L66,118 M62,118 L66,114"
+        android:strokeWidth="0.8"
+        android:strokeColor="#FFFFFF" />
+    <!-- Left & Right Divider Lines -->
+    <path
+        android:pathData="M36,116 L56,116"
+        android:strokeWidth="1"
+        android:strokeColor="#80FFFFFF" />
+    <path
+        android:pathData="M72,116 L92,116"
+        android:strokeWidth="1"
+        android:strokeColor="#80FFFFFF" />
+
+</vector>

@@ -1,0 +1,22 @@
+# =========================================================================
+# Sahayak AI — Gradle Properties Template (Example for Team Members)
+# =========================================================================
+# INSTRUCTIONS:
+# 1. Copy this file and rename it to 'gradle.properties' in this folder.
+# 2. Replace the placeholder values below with your actual credentials.
+# 3. DO NOT commit your actual gradle.properties with real keys to Git.
+# =========================================================================
+
+# JVM configuration
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+android.useAndroidX=true
+android.enableJetifier=true
+
+# Google Gemini API Key
+# Obtain from: https://aistudio.google.com/
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+
+# Supabase Project Credentials
+# Obtain from: https://supabase.com -> Project Settings -> API
+SUPABASE_URL=https://your-project-ref.supabase.co
+SUPABASE_ANON_KEY=your-supabase-anon-key-here

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_header_gradient"
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📋 Help us find the best schemes for you"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Full Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/SahayakInput"
+                android:hint="Full Name *"
+                android:layout_marginBottom="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Age -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/SahayakInput"
+                android:hint="Age *"
+                android:layout_marginBottom="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Gender -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Gender *" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- State -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="State *" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_state"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- District -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="District *" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_district"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Annual Family Income -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Annual Family Income" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_income"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Category -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Category (Caste)" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Education Level -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Education Level" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_education"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Course / Field of Study -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Course / Field of Study" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_course"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Occupation -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Occupation" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Student Status -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Currently a Student?" android:textColor="@color/text_secondary"
+                android:textSize="13sp" android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinner_student"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_card"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/primary"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btn_save_profile"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Save Profile"
+                style="@style/ButtonPrimary"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="🚪 Logout"
+                android:backgroundTint="#FFEBEE"
+                android:textColor="#C62828"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AI message bubble — LEFT aligned, light gray background -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:paddingEnd="40dp">
+
+    <!-- AI avatar circle -->
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="🤖"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@drawable/bg_avatar"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="bottom" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- AI label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sahayak AI"
+            android:textColor="@color/primary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="4dp" />
+
+        <!-- Message bubble -->
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_chat_ai"
+            android:textColor="@color/chat_ai_text"
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:maxWidth="280dp"
+            android:lineSpacingExtra="3dp" />
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_hint"
+            android:textSize="10sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

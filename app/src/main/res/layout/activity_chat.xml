@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_header_gradient"
+        app:titleTextColor="#FFFFFF">
+
+        <!-- New Chat + History buttons in toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btn_history"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="History"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:paddingEnd="4dp" />
+
+            <Button
+                android:id="@+id/btn_new_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="+ New"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="@android:color/transparent"
+                android:paddingStart="4dp"
+                android:paddingEnd="8dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Chat messages list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Empty state -->
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:text="Ask Sahayak anything about\ngovernment schemes! 🤖"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <!-- AI thinking indicator -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:id="@+id/tv_thinking">
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminateTint="@color/primary"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sahayak is checking schemes…"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Loading bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/primary"
+        android:visibility="gone" />
+
+    <!-- Message Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/card_background"
+        android:padding="8dp"
+        android:elevation="8dp">
+
+        <!-- Message input -->
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_input"
+            android:hint="Type your question…"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:padding="12dp"
+            android:paddingStart="16dp"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Send Button -->
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_send_button"
+            android:src="@android:drawable/ic_menu_send"
+            android:tint="#FFFFFF"
+            android:padding="12dp"
+            android:contentDescription="Send" />
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color" />
+
+</LinearLayout>

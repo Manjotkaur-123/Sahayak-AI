@@ -1,0 +1,42 @@
+# =========================================================================
+# Sahayak AI — Git Ignore Rules for Android & Security Protection
+# =========================================================================
+
+# --- Android Studio & Local Machine Files ---
+*.iml
+.gradle/
+/local.properties
+/.idea/
+/.vscode/
+.DS_Store
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Build Outputs & Compiled Binaries ---
+/build/
+/app/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# --- Security & Secret Credentials (DO NOT COMMIT) ---
+# Contains GEMINI_API_KEY, SUPABASE_URL, and SUPABASE_ANON_KEY
+/gradle.properties
+
+# Google Services / Firebase credentials
+google-services.json
+app/google-services.json
+
+# Keystore and signing keys
+*.jks
+*.keystore
+*.key
+signing.properties
+
+# Environment and custom secret property files
+secrets.properties
+.env
+.env.*

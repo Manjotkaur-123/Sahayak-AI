@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder google-services.json README -->
+<!-- 
+    ================================================================
+    IMPORTANT: YOU MUST PLACE YOUR google-services.json HERE
+    ================================================================
+    
+    Steps to get google-services.json:
+    
+    1. Go to: https://console.firebase.google.com
+    2. Click "Add Project" → Name it "SahayakAI"
+    3. Click the Android icon to add an Android app
+    4. Package name: com.sahayakai.app
+    5. Download google-services.json
+    6. Place the file in THIS folder (app/)
+    7. Also enable:
+       - Authentication → Email/Password
+       - Realtime Database → Start in test mode
+    
+    ================================================================
+-->
